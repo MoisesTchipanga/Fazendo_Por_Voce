@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Acadêmicos | Fazendo Por Você</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA SERVIÇOS (adicione ao seu style.css se preferir) */
+        .services-hero {
+            padding: 8rem 5% 4rem;
+            background: linear-gradient(135deg, rgba(0, 122, 204, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+        
+        .service-category {
+            margin: 3rem auto;
+            max-width: 1200px;
+        }
+        
+        .service-card {
+            background: var(--branco);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 20px rgba(0, 122, 204, 0.1);
+            border-left: 4px solid var(--azul-vscode);
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 122, 204, 0.2);
+        }
+        
+        .urgency-badge {
+            display: inline-block;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            margin-left: 1rem;
+        }
+        
+        .high-urgency {
+            background: var(--vermelho-urgente);
+            color: white;
+        }
+        
+        .medium-urgency {
+            background: var(--amarelo-atencao);
+            color: var(--preto);
+        }
+        
+        .low-urgency {
+            background: var(--verde-confirmacao);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR IDÊNTICO AO INDEX -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <h1 class="logo">Fazendo Por Você<span class="logo-symbol"></span></h1>
+            <p class="logo-subtitle">Seu parceiro confiável na ciência</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+            <li><a href="servicos.html" class="active"><i class="fas fa-flask"></i> Serviços</a></li>
+            <li><a href="#"><i class="fas fa-bolt"></i> Urgências</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i> Segurança</a></li>
+            <li><a href="fale-connosco.html"><i class="fas fa-comments"></i> Fale Conosco</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION PARA SERVIÇOS -->
+    <section class="services-hero">
+        <div class="hero-content">
+            <h2>Nossos <span>Serviços Acadêmicos</span></h2>
+            <p>Soluções completas desde a pesquisa até a publicação</p>
+            <div class="credibility-badges">
+                <span><i class="fas fa-graduation-cap"></i> Especialistas Doutorados</span>
+                <span><i class="fas fa-lock"></i> 100% Original</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS POR CATEGORIA -->
+    <main class="service-container">
+        <!-- PESQUISA -->
+        <section class="service-category">
+            <h2 class="section-title"><i class="fas fa-microscope"></i> Pesquisa Científica</h2>
+            
+            <div class="service-card">
+                <h3>Projeto de Pesquisa Completo 
+                    <span class="urgency-badge high-urgency">24-72h</span>
+                </h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Delineamento metodológico</li>
+                    <li><i class="fas fa-check-circle"></i> Revisão bibliográfica sistemática</li>
+                    <li><i class="fas fa-check-circle"></i> Cronograma de execução</li>
+                </ul>
+                <button class="cta-button">Solicitar <i class="fas fa-arrow-right"></i></button>
+            </div>
+            
+            <div class="service-card">
+                <h3>Análise Estatística 
+                    <span class="urgency-badge medium-urgency">3-5 dias</span>
+                </h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Testes paramétricos e não-paramétricos</li>
+                    <li><i class="fas fa-check-circle"></i> Gráficos profissionais (R/SPSS)</li>
+                    <li><i class="fas fa-check-circle"></i> Interpretação dos resultados</li>
+                </ul>
+                <button class="cta-button">Solicitar <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+        
+        <!-- ESCRITA -->
+        <section class="service-category">
+            <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Redação Acadêmica</h2>
+            
+            <div class="service-card">
+                <h3>Artigo Científico 
+                    <span class="urgency-badge low-urgency">1-2 semanas</span>
+                </h3>
+                <ul class="service-features">
+                    <li><i class="fas fa-check-circle"></i> Formato ABNT/APA/Vancouver</li>
+                    <li><i class="fas fa-check-circle"></i> Revisão por pares</li>
+                    <li><i class="fas fa-check-circle"></i> Tradução para inglês</li>
+                </ul>
+                <button class="cta-button">Solicitar <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
